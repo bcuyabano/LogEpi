@@ -13,6 +13,9 @@ The Covid-19_vignette.pdf offers a brief explanation of how the logistic curve i
 To load this data directly into R, follow the code below:
 
 info.url <- paste("https://www.ecdc.europa.eu/sites/default/files/documents/COVID-19-geographic-disbtribution-worldwide-",format(Sys.time(),"%Y-%m-%d"),".xlsx",sep="")
+
 GET(info.url,authenticate(":",":",type="ntlm"),write_disk(tf <- tempfile(fileext=".xlsx")))
+
 info <- as.data.frame(read_excel(tf))[,-1]
+
 names(info)[6] <- "Countries.and.territories"
