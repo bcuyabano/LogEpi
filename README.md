@@ -9,4 +9,4 @@ This package downloads the Covid-19 dataset from the JHU repository: https://git
 
 LogEpi v3.0 now allows the inclusion of covariates (other than the day count) in mkEpiCurves function. Please see the manual for details.
 
-Help us improve the package. Report any bugs you find or send suggestions to bia.cdc@gmail.com
+Help us improve the package. Report any bugs you find or send suggestions to bia.cdc@gmail.com.
